@@ -1,0 +1,62 @@
+Python 3.4.0 (v3.4.0:04f714765c13, Mar 16 2014, 19:24:06) [MSC v.1600 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> =================================================================== RESTART ===================================================================
+>>> 
+1|should be last 6
+2|should be fifth 5
+3|should be 3rd 1 4
+4|should be 3rd 2 (actually 4th) 4
+5|should be 2 1
+6|should be first  
+
+
+
+6|should be first  
+5|should be 2 1
+3|should be 3rd 1 4
+4|should be 3rd 2 (actually 4th) 4
+2|should be fifth 5
+1|should be last 6
+*******************
+__doc__=
+This script will test the Employee Class, and the Manager Class (a subclass of Employee)
+
+*******************
+Manager.__doc__=
+    one object of class Manager represents one Manager, which is a subset of
+    the class Employee containing all Employee attributes and containing two attributes specific to
+    the class Manager: Title and Bonus
+    
+Manager.__init__.__doc__=
+        Sets one object of sub-class Manager, using class Employee
+        
+Manager.__str__.__doc__=
+        Converts a manager object into a string that lists out the Employee and Manager class attributes
+        
+*******************
+Employee.__doc__=
+    one object of class Employee represents one Employee with the attributes: Name, Social Security, and Salary
+    
+Employee.__init__.__doc__=
+        Sets one object of class Employee
+        
+Employee.giveRaise.__doc__=
+        this function will modify an employee's base salary by
+        taking in the parameter percentRaise adding one to it, then multiplying by the base salary
+        
+Employee.printEmpAsRow.__doc__=
+        this function will print out the Employee object attributes in a 'table' formatted row
+        
+Employee.__str__.__doc__=
+        Converts an Employee object into a string that lists out the Employee class attributes
+        
+Employee.__eq__.__doc__=
+        Returns True if self == other, False otherwise
+        
+Employee.__lt__.__doc__=
+        Return True when the name in self is alphabetically less than the name in other.
+        If the last names are equal, then checks the first names to determine which object is less than the other.
+        This must be dictionary ordering, aka "case insensitive" --> this was managed by forcing all firstName
+        and lastName values to be entered as lowercase.  It can also be done within __lt__ by referencing a lower here.
+        
+>>> 
